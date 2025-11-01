@@ -1,7 +1,7 @@
 # 🧠 Supervised Machine Learning Projects
 
 ## 📋 Overview
-This repository contains two comprehensive machine learning projects demonstrating both **regression** and **classification** techniques for real-world business problems.
+This repository contains two machine learning projects demonstrating both **regression** and **classification** techniques for real-world business problems.
 
 ---
 
