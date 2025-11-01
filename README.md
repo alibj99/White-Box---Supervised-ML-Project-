@@ -35,15 +35,15 @@ Predict global video game sales to help publishers and retailers optimize produc
 | Model | R² Score | RMSE | Status |
 |-------|-----------|------|---------|
 | Baseline (k=5) | -0.024 | 1.294 | ⚠️ Weak |
-| **Tuned (k=31)** | **0.049** | **1.248** | ✅ **Best** |
+| **Tuned (k=31)** | **0.049** | **1.248** | ⚠️ Weak |
 
 ### 🏆 Final Model
 ```python
-KNeighborsRegressor(n_neighbors=31, weights='distance')
+KNeighborsRegressor(n_neighbors=31)
 ```
 
 **R² Score:** 0.049  
-**RMSE:** 1.248 million units  
+**RMSE:** 1.248 million  
 
 ---
 
@@ -77,20 +77,12 @@ KNeighborsClassifier(n_neighbors=5)
 ```
 
 **Test Accuracy:** 77.5%  
-**Precision:** 0.776 (weighted)  
-**Recall:** 0.775 (weighted)  
-**F1-Score:** 0.775 (weighted)  
+**Precision:** 0.776 
+**Recall:** 0.775  
+**F1-Score:** 0.775 
 
 ---
 
-## 📈 Performance Summary
-
-| Project | Best Model | Key Metric | Performance |
-|----------|-------------|-------------|--------------|
-| Sales Prediction | KNN Regression (k=31) | R² Score | 0.049 |
-| Credit Scoring | KNN Classification (k=5) | Accuracy | 77.5% |
-
----
 
 ## 🛠 Technical Implementation
 
@@ -108,16 +100,6 @@ KNeighborsClassifier(n_neighbors=5)
 └── README.md                        # Project documentation
 ```
 
----
-
-## 🚀 Quick Start
-```bash
-# Install dependencies
-pip install pandas numpy matplotlib seaborn scikit-learn jupyter
-
-# Launch Jupyter Notebook
-jupyter notebook
-```
 
 ---
 
